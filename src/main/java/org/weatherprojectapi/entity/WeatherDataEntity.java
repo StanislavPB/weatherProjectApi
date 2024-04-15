@@ -6,6 +6,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDateTime;
+
 @Entity
 @Data
 @Table(name = "weather")
@@ -17,10 +19,6 @@ public class WeatherDataEntity {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private int id;
 
-
-  @Column(name = "ip")
-  private String ip;
-
   @Column(name = "latitude")
   private String latitude;
 
@@ -31,7 +29,7 @@ public class WeatherDataEntity {
   private String temperature;
 
   @Column(name = "created")
-  private Long created;
+  private LocalDateTime created;
 
 
 }
