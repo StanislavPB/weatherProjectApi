@@ -29,7 +29,7 @@ public class WeatherDataEntity {
   private String temperature;
 
   @Column(name = "created")
-  private LocalDateTime created;
+  private LocalDateTime timeCreated;
 
 
 }
